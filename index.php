@@ -5,6 +5,8 @@
 
     authUser('jal73@njit.edu', '123456');
 
+    echo getenv('databasepass');
+
 
 
 
