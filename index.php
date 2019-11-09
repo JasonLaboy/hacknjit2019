@@ -10,9 +10,21 @@
     }
 
     // SQL Server Extension Sample Code:
-    $connectionInfo = array("UID" => "hacknjitfood", "pwd" => "{your_password_here}", "Database" => "foodsaver", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+    $connectionInfo = array("UID" => "hacknjitfood", "pwd" => "pizzaMaster@", "Database" => "foodsaver", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
     $serverName = "tcp:foodsaver.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
+
+    $s = "SELECT TOP (1000) [id]
+    ,[email]
+    ,[password]
+    ,[fName]
+    ,[lName]
+    ,[phoneNum] FROM [dbo].[users]";
+    ($t = mysqli_query( $conn ,$s)) or die (mysqli_error($conn ));
+    $r = mysqli_fetch_array($t, MYSQLI_ASSOC );
+    echo $r['id'];
+
+
 
 
     echo "Hello world!!!!!!!";
