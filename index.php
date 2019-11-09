@@ -12,9 +12,5 @@
     echo $r['fName'] . "<br>";
 
     echo "conn";
-
-
-
-
-
+    echo "hello leo";
 ?>
