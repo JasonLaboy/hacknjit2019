@@ -15,12 +15,7 @@
     $conn = sqlsrv_connect($serverName, $connectionInfo);
     echo "Hello !!!!!!!<br>";
 
-    $s = "SELECT TOP (1000) [id]
-    ,[email]
-    ,[password]
-    ,[fName]
-    ,[lName]
-    ,[phoneNum] FROM [dbo].[users]";
+    $s = "SELECT * FROM [dbo].[users]";
     echo "!!!!!!!<br>";
     ($t = mysqli_query( $conn ,$s)) or die (mysqli_error($conn ));
     echo "Hello world!!!!!!!<br>";
