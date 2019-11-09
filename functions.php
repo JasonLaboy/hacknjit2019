@@ -3,6 +3,7 @@
     include ("sqlConn.php");
 
     function authUser($email, $password){
+        global $conn;
         $s = "SELECT * FROM [dbo].[users] WHERE [email] = $email and [password] = $password";
 
 
