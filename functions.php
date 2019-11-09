@@ -1,8 +1,8 @@
 <?php
 
-    include ("sqlConn.php");
 
     function authUser($email, $password){
+        global $conn;
         echo "BANANA";
         
         $s = "SELECT * FROM [dbo].[users] WHERE [email] = $email and [password] = $password";
