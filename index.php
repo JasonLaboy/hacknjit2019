@@ -26,6 +26,6 @@
     header("send_sms.php"); 
 
 
-    echo "Hello world!!!!!!!<br>";
+    echo "hello<br>";
 
 ?>
