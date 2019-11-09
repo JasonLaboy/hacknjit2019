@@ -17,9 +17,9 @@
     $s = "SELECT * FROM [dbo].[users]";
 
 
-    ($t = mysqli_query( $conn ,$s)) or die (mysqli_error($conn ));
+    ($t = sqlsrv_query( $conn ,$s)) or die (mysqli_error($conn ));
 
-    
+
     echo "Hello world!!!!!!!<br>";
     $r = mysqli_fetch_array($t, MYSQLI_ASSOC );
     echo $r['id'];
