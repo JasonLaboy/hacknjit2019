@@ -10,12 +10,12 @@
         ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
         $r = sqlsrv_fetch_array($t);
         $id = $r['id'];
-        echo sqlsrv_num_rows($t) . "  " . $id;
+        echo sqlsrv_num_rows($t) . " i " . $id;
 
         if (sqlsrv_num_rows($t) > 0){
             
             
-            return true;
+            return TRUE;
         }
         return false;
         
