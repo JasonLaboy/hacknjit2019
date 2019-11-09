@@ -11,6 +11,8 @@
     $r = sqlsrv_fetch_array($t);
     echo $r['fName'] . "<br>";
 
+    echo "conn";
+
 
 
 
