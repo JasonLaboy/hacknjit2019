@@ -9,6 +9,10 @@
             include ("sqlConn.php");
             include ("functions.php");
 
+            if (isset($_SESSION['userId'])){
+                header("location: home.php");
+            }
+
             if (isset($_POST['email'])){
                 $email = $_POST['email'];
                 $password = $_POST['password'];
@@ -18,8 +22,6 @@
                 }else{
                     echo "<h3 style='color:red;'>Invaild email/password</h3> ";
                 }
-            }else{
-                echo "fail";
             }
         ?>
         <div>
