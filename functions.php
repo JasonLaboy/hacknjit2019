@@ -8,11 +8,13 @@
         
 
         ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
+        $r = sqlsrv_fetch_array($t);
+        $id = $r['id'];
+        echo sqlsrv_num_rows($t) . "  " . $id;
 
-        if (sqlsrv_num_rows($t ) > 0){
+        if (sqlsrv_num_rows($t) > 0){
             
-            $r = sqlsrv_fetch_array($t);
-            $id = $r['id'];
+            
             return true;
         }
         return false;
