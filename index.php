@@ -20,13 +20,12 @@
     ($t = sqlsrv_query( $conn ,$s)) or die (mysqli_error($conn ));
 
 
-    echo "Hello world!!!!!!!<br>";
     $r = sqlsrv_fetch_array($t, SQLSRV_ASSOC );
-    echo $r['fName'];
+    echo $r['fName'] . "<br>";
 
 
 
 
-    echo "Hello world!!!!!!! afjkawbfkje<br>";
+    echo "Hello world!!!!!!!<br>";
 
 ?>
