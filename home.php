@@ -9,7 +9,9 @@
             include ("sqlConn.php");
             include ("functions.php");
             
-            authUser('jal73@njit.edu', '123456');
+            if (!isset($_SESSION['userId'])){
+                header("Location: /index.php");
+            }
 
 
 

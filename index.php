@@ -10,7 +10,7 @@
             include ("functions.php");
 
             if (isset($_SESSION['userId'])){
-                header("location: home.php");
+                header("Location: /home.php");
             }
 
             if (isset($_POST['email'])){
