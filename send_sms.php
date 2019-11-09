@@ -1,5 +1,5 @@
 <?php 
-    $path = __DIR__."/README.md";
+    $path = __DIR__.'\README.md';
     if(file_exists($path)){
         echo "okay"; 
     }
