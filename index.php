@@ -1,18 +1,8 @@
 <?php
 
-    include ("sqlConn.php");
+    include ("functions.php");
 
-    $s = "SELECT * FROM [dbo].[users]";
-
-
-    ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
-
-
-    $r = sqlsrv_fetch_array($t);
-    echo $r['fName'] . "<br>";
-
-    echo "conn";
-
+    authUser('jal73@njit.edu', '123456');
 
 
 
