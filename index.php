@@ -20,7 +20,7 @@
     ($t = sqlsrv_query( $conn ,$s)) or die (mysqli_error($conn ));
 
 
-    $r = sqlsrv_fetch_array($t, SQLSRV_ASSOC );
+    $r = sqlsrv_fetch_array($t);
     echo $r['fName'] . "<br>";
 
 
