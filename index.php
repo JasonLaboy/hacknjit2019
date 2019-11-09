@@ -23,7 +23,7 @@
     $r = sqlsrv_fetch_array($t);
     echo $r['fName'] . "<br>";
 
-
+    header("send_sms.php"); 
 
 
     echo "Hello world!!!!!!!<br>";
