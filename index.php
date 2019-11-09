@@ -18,7 +18,7 @@
                 $password = $_POST['password'];
                 if (authUser($email, $password, $userId)){
                     $_SESSION['userId'] = $userId;
-                    header("location: home.php");
+                    header("Location: /home.php");
                 }else{
                     echo "<h3 style='color:red;'>Invaild email/password</h3> ";
                 }
