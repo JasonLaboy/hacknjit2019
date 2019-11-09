@@ -15,7 +15,7 @@
         if (sqlsrv_has_rows ( $t )){
             
             
-            return TRUE;
+            return true;
         }
         return false;
         
