@@ -17,7 +17,7 @@
         
     $s = "SELECT * FROM [dbo].[users] WHERE [email] = $email and [password] = $password";
     
-    echo "test2";
+    echo "test";
 
     ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
 
