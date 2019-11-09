@@ -31,6 +31,9 @@
                     password<br>
                     <input type="password" name="password">
                 </p>
+                <p>
+                    <input type="submit" name="submit" value="submit">
+                </p>
             </form>
 
         </div>
