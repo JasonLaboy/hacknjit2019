@@ -10,9 +10,9 @@
         ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
         $r = sqlsrv_fetch_array($t);
         $id = $r['id'];
-        echo sqlsrv_num_rows($t) . " i " . $id;
+        echo sqlsrv_has_rows ( $t ) . " i " . $id;
 
-        if (sqlsrv_num_rows($t) > 0){
+        if (sqlsrv_has_rows ( $t )){
             
             
             return TRUE;
