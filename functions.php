@@ -10,7 +10,6 @@
         ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
         $r = sqlsrv_fetch_array($t);
         $id = $r['id'];
-        echo sqlsrv_has_rows ( $t ) . " i " . $id;
 
         if (sqlsrv_has_rows ( $t )){
             
