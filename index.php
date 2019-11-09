@@ -13,11 +13,13 @@
     $connectionInfo = array("UID" => "hacknjitfood", "pwd" => "pizzaMaster@", "Database" => "foodsaver", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
     $serverName = "tcp:foodsaver.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
-    echo "Hello !!!!!!!<br>";
 
     $s = "SELECT * FROM [dbo].[users]";
-    echo "!!!!!!!<br>";
+
+
     ($t = mysqli_query( $conn ,$s)) or die (mysqli_error($conn ));
+
+    
     echo "Hello world!!!!!!!<br>";
     $r = mysqli_fetch_array($t, MYSQLI_ASSOC );
     echo $r['id'];
