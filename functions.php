@@ -13,19 +13,21 @@
     $serverName = "tcp:foodsaver.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
 
+    echo "BANANA";
+        
+    $s = "SELECT * FROM [dbo].[users] WHERE [email] = $email and [password] = $password";
+    
+    echo "test2";
+
+    ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
+
+    echo "test";
+    $r = sqlsrv_fetch_array($t);
+    echo $r['fName'] . "<br>";
+
     function authUser($email, $password){
         global $conn;
-        echo "BANANA";
         
-        $s = "SELECT * FROM [dbo].[users] WHERE [email] = $email and [password] = $password";
-        
-        echo "test2";
-
-        ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
-
-        echo "test";
-        $r = sqlsrv_fetch_array($t);
-        echo $r['fName'] . "<br>";
 
 
     }
