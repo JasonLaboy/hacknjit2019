@@ -21,8 +21,8 @@
 
 
     echo "Hello world!!!!!!!<br>";
-    $r = sqlsrv_fetch_array($t, MYSQLI_ASSOC );
-    echo $r['id'];
+    $r = sqlsrv_fetch_array($t, SQLSRV_ASSOC );
+    echo $r['fName'];
 
 
 
