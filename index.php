@@ -18,6 +18,8 @@
                 }else{
                     echo "<h3 style='color:red;'>Invaild email/password</h3> ";
                 }
+            }else{
+                echo "fail";
             }
         ?>
         <div>
