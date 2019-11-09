@@ -1,6 +1,6 @@
 <?php
 
-    inclue("sqlConn.php");
+    include ("sqlConn.php");
 
     $s = "SELECT * FROM [dbo].[users]";
 
