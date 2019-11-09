@@ -13,5 +13,5 @@
     $serverName = "tcp:foodsaver.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-    
+    echo "hello leo p2";
 ?>
