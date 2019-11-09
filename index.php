@@ -22,7 +22,7 @@
             <h2>
                 NJIT food
             </h2>
-            <form>
+            <form action="index.php">
                 <p>
                     email<br>
                     <input type="email" name="email">
