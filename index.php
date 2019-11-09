@@ -18,3 +18,4 @@ $client->messages->create(
         'body' => 'I sent this message in under 10 minutes!'
     )
 );
+?>
