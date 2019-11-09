@@ -26,7 +26,7 @@
             <h2>
                 NJIT food
             </h2>
-            <form action="index.php" methond="post">
+            <form action="index.php" method="post">
                 <p>
                     email<br>
                     <input type="email" name="email">
