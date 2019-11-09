@@ -17,7 +17,7 @@
     $s = "SELECT * FROM [dbo].[users]";
 
 
-    ($t = sqlsrv_query( $conn ,$s)) or die (mysqli_error($conn ));
+    ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
 
 
     $r = sqlsrv_fetch_array($t);
