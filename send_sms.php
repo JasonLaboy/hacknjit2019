@@ -1,5 +1,5 @@
 <?php 
-    $path = __DIR__.'\twilio-php-master\twilio-php-master\src';
+    $path = __DIR__.'\twilio-php-master';
     if(file_exists($path)){
         echo "okay"; 
     }
