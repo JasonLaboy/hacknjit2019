@@ -1,7 +1,7 @@
 <?php
 
     include ("info.env");
-    echo "te<br>";
+    echo "teeee<br>";
     echo getenv('databasepass') . " A<br>";
     echo " B<br>";
     
