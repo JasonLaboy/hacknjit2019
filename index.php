@@ -1,11 +1,12 @@
 <?php
+
+    echo getenv('databasepass');
     
     include ("sqlConn.php");
     include ("functions.php");
 
     authUser('jal73@njit.edu', '123456');
 
-    echo getenv('databasepass');
 
 
 
