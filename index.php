@@ -1,4 +1,6 @@
 <?php
+
+    include ("info.env");
     echo "te<br>";
     echo getenv('databasepass') . " A<br>";
     echo " B<br>";
