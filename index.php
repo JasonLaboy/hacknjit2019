@@ -1,6 +1,7 @@
 <?php
 
     echo getenv('databasepass') . " A<br>";
+    echo " B<br>";
     
     include ("sqlConn.php");
     include ("functions.php");
