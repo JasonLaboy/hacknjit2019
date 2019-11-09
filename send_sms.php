@@ -1,5 +1,5 @@
-<?php
-    echo "testing"; 
-     echo getcwd();  
-     echo  __DIR__; 
+<?php 
+     $dir = __DIR__;
+     $files1 = scandir($dir);
+     print_r($files1); 
 ?> 
