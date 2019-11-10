@@ -15,7 +15,7 @@ if (isset($_POST['email'])){
     $phone = $_POST['phone'];
     $fName = $_POST['fName'];
     $lName = $_POST['lName'];
-    
+    newUser($email, $fName, $lName, $password, $phone);
 }
 ?>
 <!DOCTYPE HTML5>
