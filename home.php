@@ -10,7 +10,7 @@
             include ("functions.php");
             
             if (!isset($_SESSION['userId'])){
-                header("Location: /index.php");
+                header("Location: index.php");
             }
 
             
@@ -18,6 +18,6 @@
 
 
         ?>
-        adasdsd
+        b
     </body>
 </html>
