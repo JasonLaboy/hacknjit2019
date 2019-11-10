@@ -1,4 +1,3 @@
-<!DOCTYPE HTML5>
 <?php
     session_start();
     include ("sqlConn.php");
@@ -11,6 +10,8 @@
     }
 
 ?>
+<!DOCTYPE HTML5>
+
 <html>
     
     <head>
