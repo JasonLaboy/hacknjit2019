@@ -5,7 +5,8 @@
 
 <head>
     <?php
-
+    
+    session_start();
     if (isset($_COOKIE['userId'])){
         header("Location: home.php");
     }
