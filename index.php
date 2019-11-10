@@ -11,7 +11,6 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         if (authUser($email, $password, $userId)){
-            echo $userId . "<br>";
             setcookie("userId", $userId, time() + 3600, "/"); 
             header("Location: home.php");
         }else{
