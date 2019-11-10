@@ -5,7 +5,7 @@
     
     if (!isset($_SESSION['userId'])){
         echo "Should redirect!!";
-        header("Location: http://www.example.com/blog"); 
+        header("Location: index.php"); 
         die();
     }
 
