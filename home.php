@@ -10,6 +10,7 @@
             include ("functions.php");
             
             if (!isset($_SESSION['userId'])){
+                echo "Should redirect";
                 header("Location: index.php");
             }
 
