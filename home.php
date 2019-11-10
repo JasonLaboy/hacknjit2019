@@ -3,7 +3,8 @@
     <head>
     </head>
     <body>
-
+        
+        <a href="logout.php">logout</a>
         <?php
             session_start();
             include ("sqlConn.php");
@@ -20,6 +21,5 @@
 
 
         ?>
-        <a href="logout.php">logout</a>
     </body>
 </html>
