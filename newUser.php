@@ -1,28 +1,29 @@
 
-<?php
 
-if (isset($_COOKIE['userId'])){
-    header("Location: home.php");
-}
-
-
-include ("sqlConn.php");
-include ("functions.php");
-
-if (isset($_POST['email'])){
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $phone = $_POST['phone'];
-    $fName = $_POST['fName'];
-    $lName = $_POST['lName'];
-    newUser($email, $fName, $lName, $password, $phone);
-}
-?>
 <!DOCTYPE HTML5>
 <html>
 
 <head>
-    
+    <?php
+
+    if (isset($_COOKIE['userId'])){
+        header("Location: home.php");
+    }
+
+
+    include ("sqlConn.php");
+    include ("functions.php");
+
+    if (isset($_POST['email'])){
+        echo "HERE";
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $phone = $_POST['phone'];
+        $fName = $_POST['fName'];
+        $lName = $_POST['lName'];
+        newUser($email, $fName, $lName, $password, $phone);
+    }
+    ?>
 </head>
 <body>
 
