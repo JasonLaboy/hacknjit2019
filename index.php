@@ -14,7 +14,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         if (authUser($email, $password, $userId)){
-            $_SESSION['userId'] = $userId;
+            $_SESSION['userId'] = "jakbdljd";
             //setcookie("userId", $userId, time() + 3600, "/"); 
             echo "Should redirect!!";
             header("Location: home.php");
