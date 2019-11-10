@@ -22,6 +22,7 @@
         $fName = $_POST['fName'];
         $lName = $_POST['lName'];
         newUser($email, $fName, $lName, $password, $phone);
+        echo "HERE";
     }
     ?>
 </head>
