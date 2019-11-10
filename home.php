@@ -20,6 +20,7 @@
     <body>
         
         <a href="logout.php">logout</a>
+        <h2>Hello <?php echo $_SESSION['userId']; ?></h2>
         
     </body>
 </html>
