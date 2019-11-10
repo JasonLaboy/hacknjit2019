@@ -4,7 +4,7 @@
     use Twilio\Rest\Client;
     // Your Account SID and Auth Token from twilio.com/console
     $account_sid = 'AC23010d085a4753b32117856483aef181';
-    $auth_token = 'fb7cc58969e4d2fbc71a132ba89b7b27';
+    $auth_token = 'ca97f7c130355e19957e0981760630c8';
     // In production, these should be environment variables. E.g.:
     // $auth_token = $_ENV["TWILIO_ACCOUNT_SID"]
     // A Twilio number you own with SMS capabilities
