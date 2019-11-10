@@ -12,6 +12,4 @@
     $connectionInfo = array("UID" => "hacknjitfood", "pwd" => "pizzaMaster@", "Database" => "foodsaver", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
     $serverName = "tcp:foodsaver.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
-
-    echo "hello leo p2";
 ?>
