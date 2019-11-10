@@ -1,7 +1,7 @@
 <?php
     
     if (!isset($_COOKIE['userId'])){
-        echo "Should redirect!!";
+        //echo "Should redirect!!";
         header("Location: index.php"); 
         die();
     }
