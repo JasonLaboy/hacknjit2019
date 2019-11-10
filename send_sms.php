@@ -12,10 +12,10 @@
     $client = new Client($account_sid, $auth_token);
     $client->messages->create(
         // Where to send a text message (your cell phone?)
-        '+16094892640'
+        '+18624529510',
         array(
             'from' => $twilio_number,
-            'body' => 'hacknjit2019'
+            'body' => 'Hi, my name is patrick'
         )
     );
 ?> 
