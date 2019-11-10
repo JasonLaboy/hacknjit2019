@@ -1,6 +1,6 @@
 <?php
-    echo $_COOKIE['userId'];
-    if (!isset($_COOKIE['userId'])){
+    echo $_SESSION['userId'];
+    if (!isset($_SESSION['userId'])){
         echo "Should redirect!!";
         header("Location: index.php"); 
         die();
