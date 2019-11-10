@@ -4,7 +4,8 @@
     function authUser($email, $password, &$id){
         global $conn;
         
-        $s = "SELECT * FROM [dbo].[users] WHERE [email] = '$email' and [password] ='$password'";
+        $s = "SELECT * FROM [dbo].[users] 
+        WHERE [email] = '$email' and [password] ='$password'";
         
 
         ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
