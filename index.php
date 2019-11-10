@@ -2,6 +2,7 @@
 <?php
 
     if (isset($_COOKIE['userId'])){
+        echo "Should redirect!";
         header("Location: home.php");
     }
 
