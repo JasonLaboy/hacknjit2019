@@ -1,10 +1,9 @@
 
 <?php
-    session_start();
     include ("sqlConn.php");
     include ("functions.php");
 
-    if (isset($_SESSION['userId'])){
+    if (isset($_COOKIE['userId'])){
         header("Location: home.php");
     }
 
@@ -13,7 +12,7 @@
         $password = $_POST['password'];
         if (authUser($email, $password, $userId)){
             echo $userId . "<br>";
-            $_SESSION['userId'] = $userId;
+            setcookie("userId", $userId, time() + 3600, "/"); 
             header("Location: home.php");
         }else{
             echo "<h3 style='color:red;'>Invaild email/password</h3> ";

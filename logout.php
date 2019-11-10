@@ -1,4 +1,4 @@
 <?php
-    unset($_SESSION['userId']);
+    unset($_COOKIE['userId']);
     header("Location: index.php");
 ?>
