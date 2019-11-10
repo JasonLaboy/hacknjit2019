@@ -1,6 +1,7 @@
 
 <?php
     include ("sqlConn.php");
+
     include ("functions.php");
 
     if (isset($_COOKIE['userId'])){
@@ -52,3 +53,4 @@
         </div>
     </body>
 </html>
+
