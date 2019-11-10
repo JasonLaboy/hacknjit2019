@@ -15,6 +15,7 @@
         $password = $_POST['password'];
         if (authUser($email, $password, $userId)){
             $_SESSION['userId'] = "jakbdljd";
+            wincache_ucache_set('userId', $userId);
             //setcookie("userId", $userId, time() + 3600, "/"); 
             echo "Should redirect!!";
             header("Location: home.php");
