@@ -12,7 +12,7 @@
             
             if (!isset($_SESSION['userId'])){
                 echo "Should redirect!!";
-                header("refresh: 0, url = 'https://jasonfoodsaver.azurewebsites.net/home.php'");
+                header("Location: http://www.example.com/blog"); 
                 die();
             }
 
