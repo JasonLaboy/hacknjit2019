@@ -12,6 +12,7 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         if (authUser($email, $password, $userId)){
+            echo $userId . "<br>";
             $_SESSION['userId'] = $userId;
             header("Location: home.php");
         }else{
