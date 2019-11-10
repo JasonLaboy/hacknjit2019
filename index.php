@@ -50,6 +50,9 @@
                 <p>
                     <input type="submit" name="submit" value="submit">
                 </p>
+                <p>
+                    Don't have an account? <a href="newUser.php">Create one</a>
+                </p>
             </form>
 
         </div>
