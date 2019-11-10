@@ -1,26 +1,28 @@
 <!DOCTYPE HTML5>
+<?php
+    session_start();
+    include ("sqlConn.php");
+    include ("functions.php");
+
+    if (isset($_SESSION['userId'])){
+        header("Location: home.php");
+    }
+
+    if (isset($_POST['email'])){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        if (authUser($email, $password, $userId)){
+            $_SESSION['userId'] = $userId;
+            header("Location: home.php");
+        }else{
+            echo "<h3 style='color:red;'>Invaild email/password</h3> ";
+        }
+    }
+?>
 <html>
+
     <head>
-        <?php
-            session_start();
-            include ("sqlConn.php");
-            include ("functions.php");
-
-            if (isset($_SESSION['userId'])){
-                header("Location: home.php");
-            }
-
-            if (isset($_POST['email'])){
-                $email = $_POST['email'];
-                $password = $_POST['password'];
-                if (authUser($email, $password, $userId)){
-                    $_SESSION['userId'] = $userId;
-                    header("Location: home.php");
-                }else{
-                    echo "<h3 style='color:red;'>Invaild email/password</h3> ";
-                }
-            }
-        ?>
+        
     </head>
     <body>
 
