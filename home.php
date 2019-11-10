@@ -10,7 +10,6 @@
 
 ?>
 <!DOCTYPE HTML5>
-
 <html>
     
     <head>
@@ -24,6 +23,7 @@
 
             //Printing foods connecting to account 
             $userPkey = getuserID($_POST['email']); 
+            echo "USER KEY: " . $userPkey; 
             $tsql = "SELECT foodname FROM userfood WHERE userID = " . $userPkey . ";";
             $results = sqlsrv_query($conn, $tsql);
             echo ("Reading data from table" . PHP_EOL);
@@ -34,7 +34,6 @@
     }
         ?>
         <a href="logout.php">logout</a>
-        <h2>Hello <?php echo $_SESSION['userId']; ?></h2>
         
     </body>
 </html>
