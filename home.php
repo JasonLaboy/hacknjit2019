@@ -1,13 +1,14 @@
 <?php
-    include ("sqlConn.php");
-    include ("functions.php");
+    header("Location: index.php"); 
     
     if (!isset($_COOKIE['userId'])){
         echo "Should redirect!!";
         header("Location: index.php"); 
         die();
     }
-
+    
+    include ("sqlConn.php");
+    include ("functions.php");
 ?>
 <!DOCTYPE HTML5>
 
