@@ -40,11 +40,11 @@
             </h2>
             <form action="index.php" method="post">
                 <p>
-                    email<br>
+                    Email<br>
                     <input type="email" name="email">
                 </p>
                 <p>
-                    password<br>
+                    Password<br>
                     <input type="password" name="password">
                 </p>
                 <p>
