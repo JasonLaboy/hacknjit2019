@@ -11,7 +11,7 @@
         $password = $_POST['password'];
         if (authUser($email, $password, $userId)){
             setcookie("userId", $userId, time() + 3600, "/"); 
-            header('Location: home.php');
+            echo "<script> window.location.replace("home.php"); <script>";
         }else{
             echo "<h3 style='color:red;'>Invaild email/password</h3> ";
         }
