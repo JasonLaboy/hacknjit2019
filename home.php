@@ -1,4 +1,5 @@
 <?php
+    session_start();
     echo $_SESSION['userId'];
     if (!isset($_SESSION['userId'])){
         echo "Should redirect!!";
