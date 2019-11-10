@@ -1,9 +1,6 @@
 <!DOCTYPE HTML5>
 <html>
     <head>
-    </head>
-    <body>
-
         <?php
             session_start();
             include ("sqlConn.php");
@@ -23,6 +20,14 @@
                     echo "<h3 style='color:red;'>Invaild email/password</h3> ";
                 }
             }
+        ?>
+    </head>
+    <body>
+
+        <?php
+            
+
+            
         ?>
         <div>
             <h2>
