@@ -14,6 +14,7 @@
         $password = $_POST['password'];
         if (authUser($email, $password, $userId)){
             setcookie("userId", $userId, time() + 3600, "/"); 
+            echo "Should redirect!!";
             header("Location: home.php");
         }else{
             echo "<h3 style='color:red;'>Invaild email/password</h3> ";
