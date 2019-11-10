@@ -12,7 +12,7 @@
             
             if (!isset($_SESSION['userId'])){
                 echo "Should redirect";
-                header("Location: index.php");
+                header("refresh: 0, url = 'index.html'");
                 die();
             }
 
