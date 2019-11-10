@@ -1,12 +1,13 @@
 
 <?php
-    include ("sqlConn.php");
-
-    include ("functions.php");
 
     if (isset($_COOKIE['userId'])){
         header("Location: home.php");
     }
+
+    
+    include ("sqlConn.php");
+    include ("functions.php");
 
     if (isset($_POST['email'])){
         $email = $_POST['email'];
