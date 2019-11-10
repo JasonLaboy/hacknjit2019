@@ -26,18 +26,22 @@
     function newUser($email, $fName, $lName, $password, $phone){
         global $conn;
 
-        $s = "SELECT * FROM [dbo].[users] WHERE [email] = '$email' and [password] ='$password'";
+        $s = "INSERT INTO [dbo].[users]
+        ([email]
+        ,[password]
+        ,[fName]
+        ,[lName]
+        ,[phoneNum])
+  VALUES
+        ('$email'
+        ,'$password'
+        ,'$fName'
+        ,'$lName'
+        ,'$phone'";
         
 
         ($t = sqlsrv_query( $conn ,$s)) or die (sqlsrv_errors($conn ));
-        $r = sqlsrv_fetch_array($t);
-        $id = $r['id'];
 
-        if (sqlsrv_has_rows ( $t )){
-            
-            
-            return true;
-        }
-        return false;
+        
     }
 ?>
